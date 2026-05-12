@@ -101,7 +101,7 @@ SRAM_DQ[4]                   : AA8       : bidir  : 3.3-V LVTTL       :         
 SRAM_DQ[6]                   : AA9       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 SRAM_WE_N                    : AA10      : output : 3.3-V LVTTL       :         : 8         : Y              
 SRAM_ADDR[6]                 : AA11      : output : 3.3-V LVTTL       :         : 8         : Y              
-GND*                         : AA12      :        :                   :         : 7         :                
+CLOCK_27                     : AA12      : input  : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
@@ -123,7 +123,7 @@ SRAM_DQ[5]                   : AB8       : bidir  : 3.3-V LVTTL       :         
 SRAM_DQ[7]                   : AB9       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 SRAM_ADDR[5]                 : AB10      : output : 3.3-V LVTTL       :         : 8         : Y              
 SRAM_ADDR[7]                 : AB11      : output : 3.3-V LVTTL       :         : 8         : Y              
-CLOCK_27                     : AB12      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB12      :        :                   :         : 7         :                
 GND*                         : AB13      :        :                   :         : 7         :                
 GND*                         : AB14      :        :                   :         : 7         :                
 GND*                         : AB15      :        :                   :         : 7         :                

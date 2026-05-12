@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nios2_config version="1.0">
+    <system>
+        <system_info filepath="true">..\nios_system.sopcinfo</system_info>
+        <system_sof filepath="true">..\DE1_Basic_Computer.sof</system_sof>
+        <system_jdi filepath="true"/>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor JTAGHubInstanceID="0">cpu</processor>
+        <terminal JTAGHubInstanceID="0">JTAG_UART</terminal>
+    </system>
+</nios2_config>

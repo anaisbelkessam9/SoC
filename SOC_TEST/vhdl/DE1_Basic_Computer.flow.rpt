@@ -1,5 +1,5 @@
 Flow report for DE1_Basic_Computer
-Tue May 12 12:12:43 2026
+Tue May 12 12:24:36 2026
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Tue May 12 12:12:30 2026            ;
+; Flow Status                        ; Successful - Tue May 12 12:24:24 2026            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DE1_Basic_Computer                               ;
 ; Top-level Entity Name              ; DE1_Basic_Computer                               ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C20F484C7                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 4,031 / 18,752 ( 21 % )                          ;
+; Total logic elements               ; 4,042 / 18,752 ( 22 % )                          ;
 ;     Total combinational functions  ; 3,599 / 18,752 ( 19 % )                          ;
 ;     Dedicated logic registers      ; 2,553 / 18,752 ( 14 % )                          ;
 ; Total registers                    ; 2826                                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2026 12:11:19 ;
+; Start date & time ; 05/12/2026 12:23:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_Basic_Computer  ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name                     ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 44829937156133.177858067918868                                ; --            ; --                              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 44829937156133.177858142004552                                ; --            ; --                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_burst_adapter     ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_master_agent      ; --         ;
@@ -186,11 +186,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:33     ; 1.0                     ; 532 MB              ; 00:00:17                           ;
-; Fitter                    ; 00:00:27     ; 1.2                     ; 806 MB              ; 00:00:20                           ;
-; Assembler                 ; 00:00:12     ; 1.0                     ; 411 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:12     ; 1.0                     ; 417 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:24     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 524 MB              ; 00:00:09                           ;
+; Fitter                    ; 00:00:17     ; 1.0                     ; 800 MB              ; 00:00:15                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 411 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 418 MB              ; 00:00:01                           ;
+; Total                     ; 00:01:00     ; --                      ; --                  ; 00:00:26                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

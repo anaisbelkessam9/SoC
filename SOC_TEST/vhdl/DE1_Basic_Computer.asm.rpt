@@ -1,5 +1,5 @@
 Assembler report for DE1_Basic_Computer
-Tue May 12 12:12:30 2026
+Tue May 12 12:24:24 2026
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 12 12:12:30 2026 ;
+; Assembler Status      ; Successful - Tue May 12 12:24:24 2026 ;
 ; Revision Name         ; DE1_Basic_Computer                    ;
 ; Top-level Entity Name ; DE1_Basic_Computer                    ;
 ; Family                ; Cyclone II                            ;
@@ -105,8 +105,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                      ;
 +----------------+------------------------------------------------------------------------------+
 ; Device         ; EP2C20F484C7                                                                 ;
-; JTAG usercode  ; 0x004E8640                                                                   ;
-; Checksum       ; 0x004E8640                                                                   ;
+; JTAG usercode  ; 0x004E5DE6                                                                   ;
+; Checksum       ; 0x004E5DE6                                                                   ;
 +----------------+------------------------------------------------------------------------------+
 
 
@@ -117,7 +117,7 @@ applicable agreement for further details.
 +--------------------+--------------------------------------------------------------------------+
 ; Device             ; EPCS16                                                                   ;
 ; JTAG usercode      ; 0x00000000                                                               ;
-; Checksum           ; 0x1D81247C                                                               ;
+; Checksum           ; 0x1D835007                                                               ;
 ; Compression Ratio  ; 2                                                                        ;
 +--------------------+--------------------------------------------------------------------------+
 
@@ -128,14 +128,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue May 12 12:12:18 2026
+    Info: Processing started: Tue May 12 12:24:13 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE1_Basic_Computer -c DE1_Basic_Computer
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 412 megabytes
-    Info: Processing ended: Tue May 12 12:12:30 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Tue May 12 12:24:24 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:01
 
 

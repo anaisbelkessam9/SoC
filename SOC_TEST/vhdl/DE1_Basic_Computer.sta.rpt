@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_Basic_Computer
-Tue May 12 12:12:43 2026
+Tue May 12 12:24:36 2026
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; nios_system/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Tue May 12 12:12:42 2026 ;
-; nios_system/synthesis/submodules/nios_system_cpu.sdc         ; OK     ; Tue May 12 12:12:42 2026 ;
+; nios_system/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Tue May 12 12:24:35 2026 ;
+; nios_system/synthesis/submodules/nios_system_cpu.sdc         ; OK     ; Tue May 12 12:24:35 2026 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -301,7 +301,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue May 12 12:12:31 2026
+    Info: Processing started: Tue May 12 12:24:25 2026
 Info: Command: quartus_sta DE1_Basic_Computer -c DE1_Basic_Computer
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 24 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 16 of the 16 physical processors detected instead.
@@ -375,9 +375,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 417 megabytes
-    Info: Processing ended: Tue May 12 12:12:43 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 418 megabytes
+    Info: Processing ended: Tue May 12 12:24:36 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:01
 
 
