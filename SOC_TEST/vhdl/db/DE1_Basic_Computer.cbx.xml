@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DE1_Basic_Computer">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_JTAG_UART:jtag_uart|nios_system_JTAG_UART_scfifo_w:the_nios_system_JTAG_UART_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_Serial_port:serial_port|altera_up_rs232_in_deserializer:RS232_In_Deserializer|altera_up_sync_fifo:RS232_In_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_pu31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_cpu:cpu|nios_system_cpu_nios2_oci:the_nios_system_cpu_nios2_oci|nios_system_cpu_nios2_ocimem:the_nios_system_cpu_nios2_ocimem|nios_system_cpu_ociram_sp_ram_module:nios_system_cpu_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_gs71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_cpu:cpu|nios_system_cpu_register_bank_a_module:nios_system_cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cfg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_cpu:cpu|nios_system_cpu_register_bank_b_module:nios_system_cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_dfg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_JTAG_UART:jtag_uart|nios_system_JTAG_UART_scfifo_r:the_nios_system_JTAG_UART_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_Onchip_memory:onchip_memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ld32.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_Basic_Computer|nios_system:NiosII|nios_system_Serial_port:serial_port|altera_up_rs232_out_serializer:RS232_Out_Serializer|altera_up_sync_fifo:RS232_Out_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_pu31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

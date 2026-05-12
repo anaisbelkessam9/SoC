@@ -1,0 +1,244 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/ --output-directory=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system/ --report-file=bsf:C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.qsys
+Progress: Loading vhdl/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding Onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_memory
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding Interval_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Interval_timer
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Adding Red_LEDs [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Red_LEDs
+Progress: Adding Green_LEDs [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Green_LEDs
+Progress: Adding HEX3_HEX0 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module HEX3_HEX0
+Progress: Adding Slider_switches [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Slider_switches
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding Expansion_JP1 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Expansion_JP1
+Progress: Adding Expansion_JP2 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Expansion_JP2
+Progress: Adding Serial_port [altera_up_avalon_rs232 13.0]
+Progress: Parameterizing module Serial_port
+Progress: Adding SRAM [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module SRAM
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding reg16_avalon_interface_0 [reg16_avalon_interface 1.0]
+Progress: Parameterizing module reg16_avalon_interface_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Error: nios_system.: add_fileset_file: No such file C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/ip_modules/reg16_avalon_interface.v
+Error: nios_system.clk.clk/reg16_avalon_interface_0.clock_sink_1: Missing connection end (try "Remove Dangling Connections")
+Error: nios_system.reg16_avalon_interface_0: reg16_avalon_interface_0.clock_sink must be connected to a clock output
+Warning: nios_system.reg16_avalon_interface_0: reg16_avalon_interface_0.conduit_end must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/ --output-directory=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.sopcinfo --report-file=html:C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.html --report-file=qip:C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system/synthesis/nios_system.qip --report-file=cmp:C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/vhdl/nios_system.qsys --language=VHDL
+Progress: Loading vhdl/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding Onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_memory
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding Interval_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Interval_timer
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Adding Red_LEDs [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Red_LEDs
+Progress: Adding Green_LEDs [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Green_LEDs
+Progress: Adding HEX3_HEX0 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module HEX3_HEX0
+Progress: Adding Slider_switches [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Slider_switches
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding Expansion_JP1 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Expansion_JP1
+Progress: Adding Expansion_JP2 [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module Expansion_JP2
+Progress: Adding Serial_port [altera_up_avalon_rs232 13.0]
+Progress: Parameterizing module Serial_port
+Progress: Adding SRAM [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module SRAM
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding reg16_avalon_interface_0 [reg16_avalon_interface 1.0]
+Progress: Parameterizing module reg16_avalon_interface_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Error: nios_system.: add_fileset_file: No such file C:/Users/mbenka1/Documents/TP_SoC/SoC/SOC_TEST/ip_modules/reg16_avalon_interface.v
+Error: nios_system.clk.clk/reg16_avalon_interface_0.clock_sink_1: Missing connection end (try "Remove Dangling Connections")
+Error: nios_system.reg16_avalon_interface_0: reg16_avalon_interface_0.clock_sink must be connected to a clock output
+Warning: nios_system.reg16_avalon_interface_0: reg16_avalon_interface_0.conduit_end must be exported, or connected to a matching conduit.
+Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 16 modules, 73 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 34 modules, 144 connections
+Info: merlin_domain_transform: After transform: 71 modules, 388 connections
+Info: merlin_router_transform: After transform: 89 modules, 459 connections
+Info: merlin_burst_transform: After transform: 92 modules, 470 connections
+Error: Cannot find clock for reg16_avalon_interface_0.clock_sink. If reg16_avalon_interface_0.clock_sink is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_001, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_001 in the generated RTL.
+Error: Cannot find clock for reg16_avalon_interface_0_avalon_slave_0_translator.clk. If reg16_avalon_interface_0_avalon_slave_0_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_002, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_002 in the generated RTL.
+Error: Cannot find clock for network.s_clk15. If network.s_clk15 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_003, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_003 in the generated RTL.
+Error: Cannot find clock for reg16_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent.clk. If reg16_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_004, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_004 in the generated RTL.
+Error: Cannot find clock for reg16_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If reg16_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_005, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_005 in the generated RTL.
+Error: Cannot find clock for id_router_015.clk. If id_router_015.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_006, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_006 in the generated RTL.
+Error: Cannot find clock for burst_adapter_002.cr0. If burst_adapter_002.cr0 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_007, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_007 in the generated RTL.
+Info: reset_adaptation_transform: After transform: 100 modules, 378 connections
+Info: merlin_network_to_switch_transform: After transform: 135 modules, 451 connections
+Info: merlin_width_transform: After transform: 141 modules, 467 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src14 and cmd_xbar_mux_015.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_015.src0 and rsp_xbar_mux_001.sink14
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 143 modules, 475 connections
+Info: merlin_mm_transform: After transform: 143 modules, 475 connections
+Info: merlin_interrupt_mapper_transform: After transform: 144 modules, 478 connections
+Warning: nios_system: "No matching role found for clk:clk:clk_out (clk)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Error: Generation stopped, 150 or more modules remaining
+Info: nios_system: Done nios_system" with 40 modules, 21 files, 1191717 bytes
+Error: ip-generate failed with exit code 1: 11 Errors, 126 Warnings
+Info: Finished: Create HDL design files for synthesis
