@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nios2_config version="1.0">
+    <system>
+        <system_info filepath="true">..\Nios_CUTECAR.qsys</system_info>
+        <system_sof filepath="true">..\output_files\CUTECAR.sof</system_sof>
+        <system_jdi filepath="true"/>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor JTAGHubInstanceID="0">nios2_qsys_0</processor>
+        <terminal JTAGHubInstanceID="0">jtag_uart</terminal>
+    </system>
+</nios2_config>

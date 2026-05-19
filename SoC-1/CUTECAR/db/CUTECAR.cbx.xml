@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CUTECAR">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_System" CBX_FILE_NAME="altpll_6rb2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5u81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_1hh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_2hh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_Audio" CBX_FILE_NAME="altpll_vpb2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_onchip_memory:onchip_memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ucd1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

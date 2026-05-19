@@ -1,0 +1,196 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/" --output-directory="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR/" --report-file="bsf:C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.bsf" --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.qsys"
+Progress: Loading CUTECAR/Nios_CUTECAR.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Warning: onchip_memory: Used altera_avalon_onchip_memory2 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module onchip_memory
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Warning: switches: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module switches
+Progress: Adding LEDs [altera_avalon_pio 13.0.1.99.2]
+Warning: LEDs: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module LEDs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Warning: jtag_uart: Used altera_avalon_jtag_uart 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module jtag_uart
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Warning: sdram: Used altera_avalon_new_sdram_controller 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module sdram
+Progress: Adding writedataR [altera_avalon_pio 13.0.1.99.2]
+Warning: writedataR: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module writedataR
+Progress: Adding writedataL [altera_avalon_pio 13.0.1.99.2]
+Warning: writedataL: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module writedataL
+Progress: Adding clocks [altera_up_clocks 13.0]
+Warning: clocks: Component type altera_up_clocks is not in the library
+Progress: Parameterizing module clocks
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Nios_CUTECAR.nios2_qsys_0: The clock source connected to the Nios's clock input has an unknown clock frequency.
+Info: Nios_CUTECAR.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Error: Nios_CUTECAR.sdram: Unknown input clock frequency.
+Error: Nios_CUTECAR.sdram: Calculated CAS latency is 0 ns.
+Error: Nios_CUTECAR.sdram: Invalid access time t_ac (must be < 0 ns).
+Error: Nios_CUTECAR.clocks: Component altera_up_clocks 13.0 not found or could not be instantiated
+Error: Nios_CUTECAR.clocks.sys_clk/writedataL.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/writedataR.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/sdram.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/jtag_uart.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/LEDs.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/switches.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/onchip_memory.clk1: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/nios2_qsys_0.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/" --output-directory="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR/synthesis/" --file-set=QUARTUS_SYNTH --report-file="sopcinfo:C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.sopcinfo" --report-file="html:C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.html" --report-file="qip:C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR/synthesis/Nios_CUTECAR.qip" --report-file="cmp:C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.cmp" --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="C:/Users/hazim/Desktop/POPS A3 2025-2026/SoC/TP/CUTECAR/Nios_CUTECAR.qsys" --language=VERILOG
+Progress: Loading CUTECAR/Nios_CUTECAR.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Warning: onchip_memory: Used altera_avalon_onchip_memory2 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module onchip_memory
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Warning: switches: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module switches
+Progress: Adding LEDs [altera_avalon_pio 13.0.1.99.2]
+Warning: LEDs: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module LEDs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Warning: jtag_uart: Used altera_avalon_jtag_uart 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module jtag_uart
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Warning: sdram: Used altera_avalon_new_sdram_controller 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module sdram
+Progress: Adding writedataR [altera_avalon_pio 13.0.1.99.2]
+Warning: writedataR: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module writedataR
+Progress: Adding writedataL [altera_avalon_pio 13.0.1.99.2]
+Warning: writedataL: Used altera_avalon_pio 13.0.1 (instead of 13.0.1.99.2)
+Progress: Parameterizing module writedataL
+Progress: Adding clocks [altera_up_clocks 13.0]
+Warning: clocks: Component type altera_up_clocks is not in the library
+Progress: Parameterizing module clocks
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Nios_CUTECAR.nios2_qsys_0: The clock source connected to the Nios's clock input has an unknown clock frequency.
+Info: Nios_CUTECAR.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Error: Nios_CUTECAR.sdram: Unknown input clock frequency.
+Error: Nios_CUTECAR.sdram: Calculated CAS latency is 0 ns.
+Error: Nios_CUTECAR.sdram: Invalid access time t_ac (must be < 0 ns).
+Error: Nios_CUTECAR.clocks: Component altera_up_clocks 13.0 not found or could not be instantiated
+Error: Nios_CUTECAR.clocks.sys_clk/writedataL.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/writedataR.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/sdram.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/jtag_uart.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/LEDs.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/switches.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/onchip_memory.clk1: Illegal connection start (clocks.sys_clk is an end interface)
+Error: Nios_CUTECAR.clocks.sys_clk/nios2_qsys_0.clk: Illegal connection start (clocks.sys_clk is an end interface)
+Info: Nios_CUTECAR: Generating Nios_CUTECAR "Nios_CUTECAR" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 41 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 20 modules, 71 connections
+Info: merlin_domain_transform: After transform: 47 modules, 192 connections
+Info: merlin_router_transform: After transform: 57 modules, 222 connections
+Info: merlin_burst_transform: After transform: 58 modules, 225 connections
+Error: Cannot find clock for nios2_qsys_0.clk. If nios2_qsys_0.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller in the generated RTL.
+Error: Cannot find clock for onchip_memory.clk1. If onchip_memory.clk1 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_001, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_001 in the generated RTL.
+Error: Cannot find clock for switches.clk. If switches.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_002, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_002 in the generated RTL.
+Error: Cannot find clock for LEDs.clk. If LEDs.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_003, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_003 in the generated RTL.
+Error: Cannot find clock for jtag_uart.clk. If jtag_uart.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_004, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_004 in the generated RTL.
+Error: Cannot find clock for sdram.clk. If sdram.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_005, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_005 in the generated RTL.
+Error: Cannot find clock for writedataR.clk. If writedataR.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_006, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_006 in the generated RTL.
+Error: Cannot find clock for writedataL.clk. If writedataL.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_007, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_007 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_instruction_master_translator.clk. If nios2_qsys_0_instruction_master_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_008, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_008 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_data_master_translator.clk. If nios2_qsys_0_data_master_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_009, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_009 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_jtag_debug_module_translator.clk. If nios2_qsys_0_jtag_debug_module_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_010, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_010 in the generated RTL.
+Error: Cannot find clock for onchip_memory_s1_translator.clk. If onchip_memory_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_011, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_011 in the generated RTL.
+Error: Cannot find clock for sdram_s1_translator.clk. If sdram_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_012, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_012 in the generated RTL.
+Error: Cannot find clock for writedataL_s1_translator.clk. If writedataL_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_013, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_013 in the generated RTL.
+Error: Cannot find clock for writedataR_s1_translator.clk. If writedataR_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_014, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_014 in the generated RTL.
+Error: Cannot find clock for jtag_uart_avalon_jtag_slave_translator.clk. If jtag_uart_avalon_jtag_slave_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_015, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_015 in the generated RTL.
+Error: Cannot find clock for LEDs_s1_translator.clk. If LEDs_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_016, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_016 in the generated RTL.
+Error: Cannot find clock for switches_s1_translator.clk. If switches_s1_translator.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_017, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_017 in the generated RTL.
+Error: Cannot find clock for network.m_clk0. If network.m_clk0 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_018, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_018 in the generated RTL.
+Error: Cannot find clock for network.m_clk1. If network.m_clk1 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_019, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_019 in the generated RTL.
+Error: Cannot find clock for network.s_clk0. If network.s_clk0 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_020, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_020 in the generated RTL.
+Error: Cannot find clock for network.s_clk1. If network.s_clk1 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_021, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_021 in the generated RTL.
+Error: Cannot find clock for network.s_clk2. If network.s_clk2 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_022, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_022 in the generated RTL.
+Error: Cannot find clock for network.s_clk3. If network.s_clk3 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_023, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_023 in the generated RTL.
+Error: Cannot find clock for network.s_clk4. If network.s_clk4 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_024, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_024 in the generated RTL.
+Error: Cannot find clock for network.s_clk5. If network.s_clk5 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_025, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_025 in the generated RTL.
+Error: Cannot find clock for network.s_clk6. If network.s_clk6 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_026, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_026 in the generated RTL.
+Error: Cannot find clock for network.s_clk7. If network.s_clk7 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_027, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_027 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent.clk. If nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_028, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_028 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent.clk. If nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_029, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_029 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent.clk. If nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_030, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_030 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_031, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_031 in the generated RTL.
+Error: Cannot find clock for nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_032, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_032 in the generated RTL.
+Error: Cannot find clock for onchip_memory_s1_translator_avalon_universal_slave_0_agent.clk. If onchip_memory_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_033, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_033 in the generated RTL.
+Error: Cannot find clock for onchip_memory_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If onchip_memory_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_034, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_034 in the generated RTL.
+Error: Cannot find clock for onchip_memory_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If onchip_memory_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_035, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_035 in the generated RTL.
+Error: Cannot find clock for sdram_s1_translator_avalon_universal_slave_0_agent.clk. If sdram_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_036, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_036 in the generated RTL.
+Error: Cannot find clock for sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_037, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_037 in the generated RTL.
+Error: Cannot find clock for sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_038, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_038 in the generated RTL.
+Error: Cannot find clock for writedataL_s1_translator_avalon_universal_slave_0_agent.clk. If writedataL_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_039, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_039 in the generated RTL.
+Error: Cannot find clock for writedataL_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If writedataL_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_040, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_040 in the generated RTL.
+Error: Cannot find clock for writedataL_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If writedataL_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_041, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_041 in the generated RTL.
+Error: Cannot find clock for writedataR_s1_translator_avalon_universal_slave_0_agent.clk. If writedataR_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_042, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_042 in the generated RTL.
+Error: Cannot find clock for writedataR_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If writedataR_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_043, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_043 in the generated RTL.
+Error: Cannot find clock for writedataR_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If writedataR_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_044, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_044 in the generated RTL.
+Error: Cannot find clock for jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent.clk. If jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_045, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_045 in the generated RTL.
+Error: Cannot find clock for jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_046, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_046 in the generated RTL.
+Error: Cannot find clock for jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_047, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_047 in the generated RTL.
+Error: Cannot find clock for LEDs_s1_translator_avalon_universal_slave_0_agent.clk. If LEDs_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_048, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_048 in the generated RTL.
+Error: Cannot find clock for LEDs_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If LEDs_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_049, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_049 in the generated RTL.
+Error: Cannot find clock for LEDs_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If LEDs_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_050, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_050 in the generated RTL.
+Error: Cannot find clock for switches_s1_translator_avalon_universal_slave_0_agent.clk. If switches_s1_translator_avalon_universal_slave_0_agent.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_051, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_051 in the generated RTL.
+Error: Cannot find clock for switches_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk. If switches_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_052, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_052 in the generated RTL.
+Error: Cannot find clock for switches_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk. If switches_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_053, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_053 in the generated RTL.
+Error: Cannot find clock for addr_router.clk. If addr_router.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_054, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_054 in the generated RTL.
+Error: Cannot find clock for addr_router_001.clk. If addr_router_001.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_055, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_055 in the generated RTL.
+Error: Cannot find clock for id_router.clk. If id_router.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_056, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_056 in the generated RTL.
+Error: Cannot find clock for id_router_001.clk. If id_router_001.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_057, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_057 in the generated RTL.
+Error: Cannot find clock for id_router_002.clk. If id_router_002.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_058, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_058 in the generated RTL.
+Error: Cannot find clock for id_router_003.clk. If id_router_003.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_059, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_059 in the generated RTL.
+Error: Cannot find clock for id_router_004.clk. If id_router_004.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_060, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_060 in the generated RTL.
+Error: Cannot find clock for id_router_005.clk. If id_router_005.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_061, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_061 in the generated RTL.
+Error: Cannot find clock for id_router_006.clk. If id_router_006.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_062, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_062 in the generated RTL.
+Error: Cannot find clock for id_router_007.clk. If id_router_007.clk is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_063, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_063 in the generated RTL.
+Error: Cannot find clock for burst_adapter.cr0. If burst_adapter.cr0 is exported please use a clock bridge and reset bridge instead of a clock source. Reset synchronizer, rst_controller_064, may not function if not connected to a clock source. To rectify this error a clock must be manually attached to the clock port of rst_controller_064 in the generated RTL.
+Info: reset_adaptation_transform: After transform: 123 modules, 290 connections
+Info: merlin_network_to_switch_transform: After transform: 142 modules, 326 connections
+Info: merlin_width_transform: After transform: 144 modules, 330 connections
+Info: merlin_mm_transform: After transform: 144 modules, 330 connections
+Warning: nios2_qsys_0.d_irq: Cannot connect clock for irq_mapper.sender
+Info: merlin_interrupt_mapper_transform: After transform: 145 modules, 332 connections
+Warning: Nios_CUTECAR: "No matching role found for clk_0:clk:clk_out (clk)"
+Warning: Nios_CUTECAR: "No matching role found for clk_0:clk_reset:reset_n_out (reset)"
+Warning: Nios_CUTECAR: "No matching role found for nios2_qsys_0:jtag_debug_module_reset:jtag_debug_module_resetrequest (reset)"
+Warning: Nios_CUTECAR: "No matching role found for writedataL:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for writedataR:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for sdram:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for jtag_uart:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for LEDs:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for switches:clk:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for onchip_memory:clk1:clk (clk)"
+Warning: Nios_CUTECAR: "No matching role found for nios2_qsys_0:clk:clk (clk)"
+Error: Generation stopped, 141 or more modules remaining
+Info: Nios_CUTECAR: Done Nios_CUTECAR" with 30 modules, 1 files, 518216 bytes
+Error: ip-generate failed with exit code 1: 78 Errors, 21 Warnings
+Info: Finished: Create HDL design files for synthesis

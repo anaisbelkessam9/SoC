@@ -1,0 +1,99 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+------------------------------------
+-- FREQUENCE FPGA : 50 MHz
+-- FREQUENCE PWM  : 16 kHz
+------------------------------------
+
+entity PWM_generation is
+    port (
+        clock  : in std_logic;
+        resetn : in std_logic;
+
+        -- Commande moteur sur 14 bits :
+        -- bit 13    : go / stop
+        --             1 = moteur actif
+        --             0 = moteur arrêté
+        --
+        -- bit 12    : direction
+        --             0 = forward
+        --             1 = backward
+        --
+        -- bits 11:0 : vitesse = durée état haut du PWM
+        D : in std_logic_vector(13 downto 0);
+
+        -- Sorties moteur vers le driver / pont en H
+        dc_motor_p : out std_logic;
+        dc_motor_n : out std_logic
+    );
+end PWM_generation;
+
+architecture Behavior of PWM_generation is
+
+    constant freqfpga : integer := 50000000;
+    constant freqpwm  : integer := 16000;
+
+    constant total_dur_int : integer := freqfpga / freqpwm; -- 3125
+
+    signal tick : unsigned(11 downto 0) := (others => '0');
+    signal PWM  : std_logic := '0';
+
+begin
+
+    process(clock)
+    begin
+        if rising_edge(clock) then
+
+            if resetn = '0' then
+                tick <= (others => '0');
+                PWM  <= '0';
+
+            else
+
+                if tick >= to_unsigned(total_dur_int - 1, tick'length) then
+                    tick <= (others => '0');
+
+                    if D(13) = '1' and unsigned(D(11 downto 0)) > 0 then
+                        PWM <= '1';
+                    else
+                        PWM <= '0';
+                    end if;
+
+                else
+                    tick <= tick + 1;
+
+                    if tick >= unsigned(D(11 downto 0)) then
+                        PWM <= '0';
+                    end if;
+
+                end if;
+
+            end if;
+
+        end if;
+    end process;
+
+    ---------------------------------------------------------------------------
+    -- Logique de direction moteur
+    --
+    -- D(13) = go / stop
+    -- D(12) = direction
+    --
+    -- direction = 0 :
+    --      dc_motor_p = PWM
+    --      dc_motor_n = 0
+    --
+    -- direction = 1 :
+    --      dc_motor_p = 0
+    --      dc_motor_n = PWM
+    ---------------------------------------------------------------------------
+
+    dc_motor_p <= PWM when D(13) = '1' and D(12) = '0' else
+                  '0';
+
+    dc_motor_n <= PWM when D(13) = '1' and D(12) = '1' else
+                  '0';
+
+end Behavior;

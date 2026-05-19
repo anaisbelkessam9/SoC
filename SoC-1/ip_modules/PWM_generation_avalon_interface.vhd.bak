@@ -1,0 +1,123 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity PWM_generation_avalon_interface is
+    port (
+        -----------------------------------------------------------------------
+        -- Avalon clock and reset
+        -----------------------------------------------------------------------
+        clock  : in std_logic;
+        resetn : in std_logic;
+
+        -----------------------------------------------------------------------
+        -- Avalon-MM Slave signals
+        -----------------------------------------------------------------------
+        read       : in std_logic;
+        write      : in std_logic;
+        chipselect : in std_logic;
+
+        writedata  : in std_logic_vector(15 downto 0);
+        byteenable : in std_logic_vector(1 downto 0);
+
+        readdata   : out std_logic_vector(15 downto 0);
+
+        -----------------------------------------------------------------------
+        -- Conduit outputs
+        -- These signals are exported outside Qsys to the motor driver
+        -----------------------------------------------------------------------
+        dc_motor_p_export : out std_logic;
+        dc_motor_n_export : out std_logic
+    );
+end PWM_generation_avalon_interface;
+
+architecture Structure of PWM_generation_avalon_interface is
+
+    ---------------------------------------------------------------------------
+    -- Internal command register
+    --
+    -- bit 13    : go / stop
+    -- bit 12    : direction
+    -- bits 11:0 : PWM duty / speed
+    ---------------------------------------------------------------------------
+    signal local_byteenable : std_logic_vector(1 downto 0);
+    signal to_pwm           : std_logic_vector(13 downto 0);
+    signal from_reg         : std_logic_vector(15 downto 0);
+
+    component PWM_generation
+        port (
+            clock      : in std_logic;
+            resetn     : in std_logic;
+            D          : in std_logic_vector(13 downto 0);
+            dc_motor_p : out std_logic;
+            dc_motor_n : out std_logic
+        );
+    end component;
+
+begin
+
+    ---------------------------------------------------------------------------
+    -- Same idea as reg16_avalon_interface:
+    -- the register is written only when chipselect = 1 and write = 1
+    ---------------------------------------------------------------------------
+
+    with (chipselect and write) select
+        local_byteenable <= byteenable when '1',
+                            "00"       when others;
+
+    ---------------------------------------------------------------------------
+    -- Avalon-MM writable register
+    --
+    -- Only bits 13 downto 0 are useful.
+    -- Bits 15 downto 14 are unused and kept at 0.
+    ---------------------------------------------------------------------------
+
+    process(clock)
+    begin
+        if rising_edge(clock) then
+
+            if resetn = '0' then
+                from_reg <= (others => '0');
+
+            else
+
+                if local_byteenable(0) = '1' then
+                    from_reg(7 downto 0) <= writedata(7 downto 0);
+                end if;
+
+                if local_byteenable(1) = '1' then
+                    from_reg(13 downto 8) <= writedata(13 downto 8);
+                    from_reg(15 downto 14) <= "00";
+                end if;
+
+            end if;
+
+        end if;
+    end process;
+
+    ---------------------------------------------------------------------------
+    -- Send the 14-bit command register to the PWM core
+    ---------------------------------------------------------------------------
+
+    to_pwm <= from_reg(13 downto 0);
+
+    ---------------------------------------------------------------------------
+    -- Avalon-MM readback
+    -- The Nios II can read the current motor command register.
+    ---------------------------------------------------------------------------
+
+    readdata <= from_reg;
+
+    ---------------------------------------------------------------------------
+    -- PWM core instance
+    ---------------------------------------------------------------------------
+
+    pwm_instance : PWM_generation
+        port map (
+            clock      => clock,
+            resetn     => resetn,
+            D          => to_pwm,
+            dc_motor_p => dc_motor_p_export,
+            dc_motor_n => dc_motor_n_export
+        );
+
+end Structure;
