@@ -1,68 +1,68 @@
 |Top_CUTECAR
-CLOCK_50 => Nios_CUTECAR:u0.clk_clk
-KEY[0] => Nios_CUTECAR:u0.reset_reset_n
-SW[0] => Nios_CUTECAR:u0.switches_export[0]
-SW[1] => Nios_CUTECAR:u0.switches_export[1]
-SW[2] => Nios_CUTECAR:u0.switches_export[2]
-SW[3] => Nios_CUTECAR:u0.switches_export[3]
-SW[4] => Nios_CUTECAR:u0.switches_export[4]
-SW[5] => Nios_CUTECAR:u0.switches_export[5]
-SW[6] => Nios_CUTECAR:u0.switches_export[6]
-SW[7] => Nios_CUTECAR:u0.switches_export[7]
-LED[0] <= Nios_CUTECAR:u0.leds_export[0]
-LED[1] <= Nios_CUTECAR:u0.leds_export[1]
-LED[2] <= Nios_CUTECAR:u0.leds_export[2]
-LED[3] <= Nios_CUTECAR:u0.leds_export[3]
-LED[4] <= Nios_CUTECAR:u0.leds_export[4]
-LED[5] <= Nios_CUTECAR:u0.leds_export[5]
-LED[6] <= Nios_CUTECAR:u0.leds_export[6]
-LED[7] <= Nios_CUTECAR:u0.leds_export[7]
-DRAM_CLK <= Nios_CUTECAR:u0.clocks_sdram_clk_clk
-DRAM_CKE <= Nios_CUTECAR:u0.sdram_wire_cke
-DRAM_ADDR[0] <= Nios_CUTECAR:u0.sdram_wire_addr[0]
-DRAM_ADDR[1] <= Nios_CUTECAR:u0.sdram_wire_addr[1]
-DRAM_ADDR[2] <= Nios_CUTECAR:u0.sdram_wire_addr[2]
-DRAM_ADDR[3] <= Nios_CUTECAR:u0.sdram_wire_addr[3]
-DRAM_ADDR[4] <= Nios_CUTECAR:u0.sdram_wire_addr[4]
-DRAM_ADDR[5] <= Nios_CUTECAR:u0.sdram_wire_addr[5]
-DRAM_ADDR[6] <= Nios_CUTECAR:u0.sdram_wire_addr[6]
-DRAM_ADDR[7] <= Nios_CUTECAR:u0.sdram_wire_addr[7]
-DRAM_ADDR[8] <= Nios_CUTECAR:u0.sdram_wire_addr[8]
-DRAM_ADDR[9] <= Nios_CUTECAR:u0.sdram_wire_addr[9]
-DRAM_ADDR[10] <= Nios_CUTECAR:u0.sdram_wire_addr[10]
-DRAM_ADDR[11] <= Nios_CUTECAR:u0.sdram_wire_addr[11]
-DRAM_ADDR[12] <= Nios_CUTECAR:u0.sdram_wire_addr[12]
-DRAM_BA[0] <= Nios_CUTECAR:u0.sdram_wire_ba[0]
-DRAM_BA[1] <= Nios_CUTECAR:u0.sdram_wire_ba[1]
-DRAM_CS_N <= Nios_CUTECAR:u0.sdram_wire_cs_n
-DRAM_CAS_N <= Nios_CUTECAR:u0.sdram_wire_cas_n
-DRAM_RAS_N <= Nios_CUTECAR:u0.sdram_wire_ras_n
-DRAM_WE_N <= Nios_CUTECAR:u0.sdram_wire_we_n
-DRAM_DQ[0] <> Nios_CUTECAR:u0.sdram_wire_dq[0]
-DRAM_DQ[1] <> Nios_CUTECAR:u0.sdram_wire_dq[1]
-DRAM_DQ[2] <> Nios_CUTECAR:u0.sdram_wire_dq[2]
-DRAM_DQ[3] <> Nios_CUTECAR:u0.sdram_wire_dq[3]
-DRAM_DQ[4] <> Nios_CUTECAR:u0.sdram_wire_dq[4]
-DRAM_DQ[5] <> Nios_CUTECAR:u0.sdram_wire_dq[5]
-DRAM_DQ[6] <> Nios_CUTECAR:u0.sdram_wire_dq[6]
-DRAM_DQ[7] <> Nios_CUTECAR:u0.sdram_wire_dq[7]
-DRAM_DQ[8] <> Nios_CUTECAR:u0.sdram_wire_dq[8]
-DRAM_DQ[9] <> Nios_CUTECAR:u0.sdram_wire_dq[9]
-DRAM_DQ[10] <> Nios_CUTECAR:u0.sdram_wire_dq[10]
-DRAM_DQ[11] <> Nios_CUTECAR:u0.sdram_wire_dq[11]
-DRAM_DQ[12] <> Nios_CUTECAR:u0.sdram_wire_dq[12]
-DRAM_DQ[13] <> Nios_CUTECAR:u0.sdram_wire_dq[13]
-DRAM_DQ[14] <> Nios_CUTECAR:u0.sdram_wire_dq[14]
-DRAM_DQ[15] <> Nios_CUTECAR:u0.sdram_wire_dq[15]
-DRAM_DQM[0] <= Nios_CUTECAR:u0.sdram_wire_dqm[0]
-DRAM_DQM[1] <= Nios_CUTECAR:u0.sdram_wire_dqm[1]
-MTRR_P <= Nios_CUTECAR:u0.pwm_generation_avalon_interface_0_conduit_end_export[3]
-MTRR_N <= Nios_CUTECAR:u0.pwm_generation_avalon_interface_0_conduit_end_export[2]
-MTRL_P <= Nios_CUTECAR:u0.pwm_generation_avalon_interface_0_conduit_end_export[1]
-MTRL_N <= Nios_CUTECAR:u0.pwm_generation_avalon_interface_0_conduit_end_export[0]
+CLOCK_50 => Nios_CUTECAR:nios_system_inst.clk_clk
+KEY[0] => Nios_CUTECAR:nios_system_inst.reset_reset_n
+SW[0] => Nios_CUTECAR:nios_system_inst.switches_export[0]
+SW[1] => Nios_CUTECAR:nios_system_inst.switches_export[1]
+SW[2] => Nios_CUTECAR:nios_system_inst.switches_export[2]
+SW[3] => Nios_CUTECAR:nios_system_inst.switches_export[3]
+SW[4] => Nios_CUTECAR:nios_system_inst.switches_export[4]
+SW[5] => Nios_CUTECAR:nios_system_inst.switches_export[5]
+SW[6] => Nios_CUTECAR:nios_system_inst.switches_export[6]
+SW[7] => Nios_CUTECAR:nios_system_inst.switches_export[7]
+LED[0] <= Nios_CUTECAR:nios_system_inst.leds_export[0]
+LED[1] <= Nios_CUTECAR:nios_system_inst.leds_export[1]
+LED[2] <= Nios_CUTECAR:nios_system_inst.leds_export[2]
+LED[3] <= Nios_CUTECAR:nios_system_inst.leds_export[3]
+LED[4] <= Nios_CUTECAR:nios_system_inst.leds_export[4]
+LED[5] <= Nios_CUTECAR:nios_system_inst.leds_export[5]
+LED[6] <= Nios_CUTECAR:nios_system_inst.leds_export[6]
+LED[7] <= Nios_CUTECAR:nios_system_inst.leds_export[7]
+DRAM_CLK <= Nios_CUTECAR:nios_system_inst.clocks_sdram_clk_clk
+DRAM_CKE <= Nios_CUTECAR:nios_system_inst.sdram_wire_cke
+DRAM_ADDR[0] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[0]
+DRAM_ADDR[1] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[1]
+DRAM_ADDR[2] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[2]
+DRAM_ADDR[3] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[3]
+DRAM_ADDR[4] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[4]
+DRAM_ADDR[5] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[5]
+DRAM_ADDR[6] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[6]
+DRAM_ADDR[7] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[7]
+DRAM_ADDR[8] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[8]
+DRAM_ADDR[9] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[9]
+DRAM_ADDR[10] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[10]
+DRAM_ADDR[11] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[11]
+DRAM_ADDR[12] <= Nios_CUTECAR:nios_system_inst.sdram_wire_addr[12]
+DRAM_BA[0] <= Nios_CUTECAR:nios_system_inst.sdram_wire_ba[0]
+DRAM_BA[1] <= Nios_CUTECAR:nios_system_inst.sdram_wire_ba[1]
+DRAM_CS_N <= Nios_CUTECAR:nios_system_inst.sdram_wire_cs_n
+DRAM_CAS_N <= Nios_CUTECAR:nios_system_inst.sdram_wire_cas_n
+DRAM_RAS_N <= Nios_CUTECAR:nios_system_inst.sdram_wire_ras_n
+DRAM_WE_N <= Nios_CUTECAR:nios_system_inst.sdram_wire_we_n
+DRAM_DQ[0] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[0]
+DRAM_DQ[1] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[1]
+DRAM_DQ[2] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[2]
+DRAM_DQ[3] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[3]
+DRAM_DQ[4] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[4]
+DRAM_DQ[5] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[5]
+DRAM_DQ[6] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[6]
+DRAM_DQ[7] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[7]
+DRAM_DQ[8] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[8]
+DRAM_DQ[9] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[9]
+DRAM_DQ[10] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[10]
+DRAM_DQ[11] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[11]
+DRAM_DQ[12] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[12]
+DRAM_DQ[13] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[13]
+DRAM_DQ[14] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[14]
+DRAM_DQ[15] <> Nios_CUTECAR:nios_system_inst.sdram_wire_dq[15]
+DRAM_DQM[0] <= Nios_CUTECAR:nios_system_inst.sdram_wire_dqm[0]
+DRAM_DQM[1] <= Nios_CUTECAR:nios_system_inst.sdram_wire_dqm[1]
+MTRR_P <= Nios_CUTECAR:nios_system_inst.pwm_generation_avalon_interface_0_conduit_end_export[3]
+MTRR_N <= Nios_CUTECAR:nios_system_inst.pwm_generation_avalon_interface_0_conduit_end_export[2]
+MTRL_P <= Nios_CUTECAR:nios_system_inst.pwm_generation_avalon_interface_0_conduit_end_export[1]
+MTRL_N <= Nios_CUTECAR:nios_system_inst.pwm_generation_avalon_interface_0_conduit_end_export[0]
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst
 clk_clk => clk_clk.IN2
 switches_export[0] => switches_export[0].IN1
 switches_export[1] => switches_export[1].IN1
@@ -127,7 +127,7 @@ pwm_generation_avalon_interface_0_conduit_end_export[2] <= PWM_generation_avalon
 pwm_generation_avalon_interface_0_conduit_end_export[3] <= PWM_generation_avalon_interface:pwm_generation_avalon_interface_0.motor_out
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0
 clk => clk.IN4
 d_irq[0] => ~NO_FANOUT~
 d_irq[1] => ~NO_FANOUT~
@@ -407,7 +407,7 @@ jtag_debug_module_waitrequest <= Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CU
 no_ci_readra <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_test_bench:the_Nios_CUTECAR_nios2_qsys_0_test_bench
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_test_bench:the_Nios_CUTECAR_nios2_qsys_0_test_bench
 D_iw[0] => ~NO_FANOUT~
 D_iw[1] => ~NO_FANOUT~
 D_iw[2] => ~NO_FANOUT~
@@ -743,7 +743,7 @@ d_write <= d_write~reg0.DB_MAX_OUTPUT_PORT_TYPE
 test_has_ended <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a
 clock => clock.IN1
 data[0] => data[0].IN1
 data[1] => data[1].IN1
@@ -822,7 +822,7 @@ q[30] <= altsyncram:the_altsyncram.q_b
 q[31] <= altsyncram:the_altsyncram.q_b
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram
 wren_a => altsyncram_1hh1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -982,7 +982,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_1hh1:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_a_module:Nios_CUTECAR_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_1hh1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1433,7 +1433,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b
 clock => clock.IN1
 data[0] => data[0].IN1
 data[1] => data[1].IN1
@@ -1512,7 +1512,7 @@ q[30] <= altsyncram:the_altsyncram.q_b
 q[31] <= altsyncram:the_altsyncram.q_b
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram
 wren_a => altsyncram_2hh1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1672,7 +1672,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_2hh1:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_register_bank_b_module:Nios_CUTECAR_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_2hh1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2123,7 +2123,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci
 D_valid => D_valid.IN1
 E_st_data[0] => E_st_data[0].IN1
 E_st_data[1] => E_st_data[1].IN1
@@ -2370,7 +2370,7 @@ resetrequest <= Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug:the_Nios_CUTECAR_nios2
 waitrequest <= Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem.waitrequest
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug
 clk => clk.IN1
 dbrk_break => oci_hbreak_req.IN1
 debugreq => always0.IN0
@@ -2438,7 +2438,7 @@ resetlatch <= resetlatch~reg0.DB_MAX_OUTPUT_PORT_TYPE
 resetrequest <= resetrequest~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -2447,7 +2447,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem
 address[0] => ociram_addr.DATAA
 address[1] => ociram_addr.DATAA
 address[2] => ociram_addr.DATAA
@@ -2800,7 +2800,7 @@ ociram_readdata[31] <= Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTEC
 waitrequest <= waitrequest~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -2881,7 +2881,7 @@ q[30] <= altsyncram:the_altsyncram.q_a
 q[31] <= altsyncram:the_altsyncram.q_a
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram
 wren_a => altsyncram_5u81:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -2981,7 +2981,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_5u81:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_ocimem:the_Nios_CUTECAR_nios2_qsys_0_nios2_ocimem|Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram_module:Nios_CUTECAR_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_5u81:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3400,7 +3400,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_avalon_reg:the_Nios_CUTECAR_nios2_qsys_0_nios2_avalon_reg
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_avalon_reg:the_Nios_CUTECAR_nios2_qsys_0_nios2_avalon_reg
 address[0] => Equal0.IN8
 address[0] => Equal1.IN1
 address[1] => Equal0.IN7
@@ -3592,7 +3592,7 @@ ocireg_mrs <= writedata[0].DB_MAX_OUTPUT_PORT_TYPE
 take_action_ocireg <= take_action_ocireg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_break:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_break
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_break:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_break
 clk => trigger_state.CLK
 clk => break_readreg[0]~reg0.CLK
 clk => break_readreg[1]~reg0.CLK
@@ -3940,7 +3940,7 @@ xbrk_ctrl3[6] <= <GND>
 xbrk_ctrl3[7] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_xbrk:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_xbrk
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_xbrk:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_xbrk
 D_valid => ~NO_FANOUT~
 E_valid => xbrk_break~reg0.ENA
 F_pc[0] => ~NO_FANOUT~
@@ -4012,7 +4012,7 @@ xbrk_traceon <= <GND>
 xbrk_trigout <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dbrk:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dbrk
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dbrk:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dbrk
 E_st_data[0] => cpu_d_writedata[0].DATAIN
 E_st_data[1] => cpu_d_writedata[1].DATAIN
 E_st_data[2] => cpu_d_writedata[2].DATAIN
@@ -4227,7 +4227,7 @@ dbrk_traceon <= dbrk_traceon~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dbrk_trigout <= dbrk_trigout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_itrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_itrace
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_itrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_itrace
 clk => dct_count[0]~reg0.CLK
 clk => dct_count[1]~reg0.CLK
 clk => dct_count[2]~reg0.CLK
@@ -4480,7 +4480,7 @@ trc_ctrl[15] <= <GND>
 trc_on <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace
 clk => dtm[0]~reg0.CLK
 clk => dtm[1]~reg0.CLK
 clk => dtm[2]~reg0.CLK
@@ -4809,7 +4809,7 @@ dtm[34] <= dtm[34]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dtm[35] <= dtm[35]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace|Nios_CUTECAR_nios2_qsys_0_nios2_oci_td_mode:Nios_CUTECAR_nios2_qsys_0_nios2_oci_trc_ctrl_td_mode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_dtrace|Nios_CUTECAR_nios2_qsys_0_nios2_oci_td_mode:Nios_CUTECAR_nios2_qsys_0_nios2_oci_trc_ctrl_td_mode
 ctrl[0] => ~NO_FANOUT~
 ctrl[1] => ~NO_FANOUT~
 ctrl[2] => ~NO_FANOUT~
@@ -4829,7 +4829,7 @@ td_mode[2] <= ctrl[6].DB_MAX_OUTPUT_PORT_TYPE
 td_mode[3] <= ctrl[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo
 atm[0] => ~NO_FANOUT~
 atm[1] => ~NO_FANOUT~
 atm[2] => ~NO_FANOUT~
@@ -5031,7 +5031,7 @@ tw[34] <= itm[34].DB_MAX_OUTPUT_PORT_TYPE
 tw[35] <= itm[35].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_compute_tm_count:Nios_CUTECAR_nios2_qsys_0_nios2_oci_compute_tm_count_tm_count
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_compute_tm_count:Nios_CUTECAR_nios2_qsys_0_nios2_oci_compute_tm_count_tm_count
 atm_valid => Decoder0.IN1
 dtm_valid => Decoder0.IN2
 itm_valid => Decoder0.IN0
@@ -5039,7 +5039,7 @@ compute_tm_count[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 compute_tm_count[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifowp_inc:Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifowp_inc_fifowp
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifowp_inc:Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifowp_inc_fifowp
 free2 => always0.IN1
 free3 => always0.IN1
 tm_count[0] => LessThan0.IN4
@@ -5054,7 +5054,7 @@ fifowp_inc[2] <= <GND>
 fifowp_inc[3] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifocount_inc:Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifocount_inc_fifocount
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifocount_inc:Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifocount_inc_fifocount
 empty => fifocount_inc.OUTPUTSELECT
 empty => fifocount_inc.OUTPUTSELECT
 empty => fifocount_inc.OUTPUTSELECT
@@ -5077,7 +5077,7 @@ fifocount_inc[3] <= fifocount_inc.DB_MAX_OUTPUT_PORT_TYPE
 fifocount_inc[4] <= fifocount_inc.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_oci_test_bench:the_Nios_CUTECAR_nios2_qsys_0_oci_test_bench
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_fifo|Nios_CUTECAR_nios2_qsys_0_oci_test_bench:the_Nios_CUTECAR_nios2_qsys_0_oci_test_bench
 dct_buffer[0] => ~NO_FANOUT~
 dct_buffer[1] => ~NO_FANOUT~
 dct_buffer[2] => ~NO_FANOUT~
@@ -5116,7 +5116,7 @@ test_ending => ~NO_FANOUT~
 test_has_ended => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_pib:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_pib
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_pib:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_pib
 clk => ~NO_FANOUT~
 clkx2 => ~NO_FANOUT~
 jrst_n => ~NO_FANOUT~
@@ -5177,7 +5177,7 @@ tr_data[16] <= <GND>
 tr_data[17] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_im:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_im
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_nios2_oci_im:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci_im
 clk => trc_wrap~reg0.CLK
 clk => trc_im_addr[0]~reg0.CLK
 clk => trc_im_addr[1]~reg0.CLK
@@ -5340,7 +5340,7 @@ trc_wrap <= trc_wrap~reg0.DB_MAX_OUTPUT_PORT_TYPE
 xbrk_wrap_traceoff <= xbrk_wrap_traceoff.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper
 MonDReg[0] => MonDReg[0].IN1
 MonDReg[1] => MonDReg[1].IN1
 MonDReg[2] => MonDReg[2].IN1
@@ -5519,7 +5519,7 @@ take_no_action_ocimem_a <= Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:th
 take_no_action_tracemem_a <= Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk.take_no_action_tracemem_a
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck
 MonDReg[0] => Mux36.IN0
 MonDReg[1] => Mux35.IN0
 MonDReg[2] => Mux34.IN0
@@ -5855,7 +5855,7 @@ st_ready_test_idle <= jtag_state_rti.DB_MAX_OUTPUT_PORT_TYPE
 tdo <= tdo.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -5864,7 +5864,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -5873,7 +5873,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk
 clk => clk.IN2
 ir_in[0] => ir[0].DATAIN
 ir_in[1] => ir[1].DATAIN
@@ -5970,7 +5970,7 @@ take_no_action_ocimem_a <= take_no_action_ocimem_a.DB_MAX_OUTPUT_PORT_TYPE
 take_no_action_tracemem_a <= take_no_action_tracemem_a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -5979,7 +5979,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer4
 clk => dreg[0].CLK
 clk => din_s1.CLK
 reset_n => dreg[0].ACLR
@@ -5988,7 +5988,7 @@ din => din_s1.DATAIN
 dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_phy
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_phy
 tck <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_tck
 tdi <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_tdi
 ir_in[0] <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_ir_in
@@ -6023,7 +6023,7 @@ jtag_state_e2ir <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_jtag_sta
 jtag_state_uir <= sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst.usr_jtag_state_uir
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_nios2_qsys_0:nios2_qsys_0|Nios_CUTECAR_nios2_qsys_0_nios2_oci:the_Nios_CUTECAR_nios2_qsys_0_nios2_oci|Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper:the_Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:Nios_CUTECAR_nios2_qsys_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst
 usr_tck <= raw_tck.DB_MAX_OUTPUT_PORT_TYPE
 usr_tdi <= tdi.DB_MAX_OUTPUT_PORT_TYPE
 usr_ir_in[0] <= ir_in[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -6095,7 +6095,7 @@ ir_out[0] <= usr_ir_out[0].DB_MAX_OUTPUT_PORT_TYPE
 ir_out[1] <= usr_ir_out[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_onchip_memory:onchip_memory
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_onchip_memory:onchip_memory
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -6182,7 +6182,7 @@ readdata[30] <= altsyncram:the_altsyncram.q_a
 readdata[31] <= altsyncram:the_altsyncram.q_a
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_onchip_memory:onchip_memory|altsyncram:the_altsyncram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_onchip_memory:onchip_memory|altsyncram:the_altsyncram
 wren_a => altsyncram_ucd1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -6284,7 +6284,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_onchip_memory:onchip_memory|altsyncram:the_altsyncram|altsyncram_ucd1:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_onchip_memory:onchip_memory|altsyncram:the_altsyncram|altsyncram_ucd1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6799,7 +6799,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_switches:switches
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_switches:switches
 address[0] => Equal0.IN31
 address[1] => Equal0.IN30
 clk => readdata[0]~reg0.CLK
@@ -6908,7 +6908,7 @@ readdata[30] <= readdata[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readdata[31] <= readdata[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_LEDs:leds
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_LEDs:leds
 address[0] => Equal0.IN31
 address[1] => Equal0.IN30
 chipselect => always0.IN0
@@ -7003,7 +7003,7 @@ readdata[30] <= <GND>
 readdata[31] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart
 av_address => ien_AF.OUTPUTSELECT
 av_address => ien_AE.OUTPUTSELECT
 av_address => ac.OUTPUTSELECT
@@ -7093,7 +7093,7 @@ dataavailable <= dataavailable~reg0.DB_MAX_OUTPUT_PORT_TYPE
 readyfordata <= readyfordata~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_wdata[0] => fifo_wdata[0].IN1
@@ -7124,7 +7124,7 @@ wfifo_used[4] <= scfifo:wfifo.usedw
 wfifo_used[5] <= scfifo:wfifo.usedw
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -7158,7 +7158,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -7189,7 +7189,7 @@ usedw[5] <= a_dpfifo_q131:dpfifo.usedw[5]
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -7235,7 +7235,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -7267,7 +7267,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7293,7 +7293,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -7328,7 +7328,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -7483,7 +7483,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7503,7 +7503,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_w:the_Nios_CUTECAR_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7523,7 +7523,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r
 clk => clk.IN1
 fifo_clear => fifo_clear.IN1
 fifo_rd => fifo_rd.IN1
@@ -7555,7 +7555,7 @@ rfifo_used[4] <= scfifo:rfifo.usedw
 rfifo_used[5] <= scfifo:rfifo.usedw
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo
 data[0] => scfifo_jr21:auto_generated.data[0]
 data[1] => scfifo_jr21:auto_generated.data[1]
 data[2] => scfifo_jr21:auto_generated.data[2]
@@ -7589,7 +7589,7 @@ usedw[4] <= scfifo_jr21:auto_generated.usedw[4]
 usedw[5] <= scfifo_jr21:auto_generated.usedw[5]
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated
 aclr => a_dpfifo_q131:dpfifo.aclr
 clock => a_dpfifo_q131:dpfifo.clock
 data[0] => a_dpfifo_q131:dpfifo.data[0]
@@ -7620,7 +7620,7 @@ usedw[5] <= a_dpfifo_q131:dpfifo.usedw[5]
 wrreq => a_dpfifo_q131:dpfifo.wreq
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo
 aclr => a_fefifo_7cf:fifo_state.aclr
 aclr => cntr_1ob:rd_ptr_count.aclr
 aclr => cntr_1ob:wr_ptr.aclr
@@ -7666,7 +7666,7 @@ wreq => dpram_nl21:FIFOram.wren
 wreq => cntr_1ob:wr_ptr.cnt_en
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_do7:count_usedw.aclr
@@ -7698,7 +7698,7 @@ wreq => _.IN0
 wreq => cntr_do7:count_usedw.updown
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|a_fefifo_7cf:fifo_state|cntr_do7:count_usedw
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7724,7 +7724,7 @@ updown => counter_comb_bita4.DATAB
 updown => counter_comb_bita5.DATAB
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram
 data[0] => altsyncram_r1m1:altsyncram1.data_a[0]
 data[1] => altsyncram_r1m1:altsyncram1.data_a[1]
 data[2] => altsyncram_r1m1:altsyncram1.data_a[2]
@@ -7759,7 +7759,7 @@ wraddress[5] => altsyncram_r1m1:altsyncram1.address_a[5]
 wren => altsyncram_r1m1:altsyncram1.wren_a
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -7914,7 +7914,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:rd_ptr_count
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7934,7 +7934,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|Nios_CUTECAR_jtag_uart_scfifo_r:the_Nios_CUTECAR_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr
 aclr => counter_reg_bit[5].IN0
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -7954,7 +7954,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_jtag_uart:jtag_uart|alt_jtag_atlantic:Nios_CUTECAR_jtag_uart_alt_jtag_atlantic
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_jtag_uart:jtag_uart|alt_jtag_atlantic:Nios_CUTECAR_jtag_uart_alt_jtag_atlantic
 raw_tck => write_stalled.CLK
 raw_tck => wdata[0].CLK
 raw_tck => wdata[1].CLK
@@ -8176,7 +8176,7 @@ t_dat[7] <= t_dat[7].DB_MAX_OUTPUT_PORT_TYPE
 t_pause <= t_pause~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_sdram:sdram
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_sdram:sdram
 az_addr[0] => az_addr[0].IN1
 az_addr[1] => az_addr[1].IN1
 az_addr[2] => az_addr[2].IN1
@@ -8282,7 +8282,7 @@ zs_ras_n <= zs_ras_n.DB_MAX_OUTPUT_PORT_TYPE
 zs_we_n <= zs_we_n.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_sdram:sdram|Nios_CUTECAR_sdram_input_efifo_module:the_Nios_CUTECAR_sdram_input_efifo_module
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_sdram:sdram|Nios_CUTECAR_sdram_input_efifo_module:the_Nios_CUTECAR_sdram_input_efifo_module
 clk => entry_0[0].CLK
 clk => entry_0[1].CLK
 clk => entry_0[2].CLK
@@ -8521,7 +8521,7 @@ rd_data[41] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 rd_data[42] <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_clocks:clocks
 CLOCK_50 => CLOCK_50.IN1
 CLOCK_27 => CLOCK_27.IN1
 reset => ~NO_FANOUT~
@@ -8531,7 +8531,7 @@ sys_clk <= altpll:DE_Clock_Generator_System.clk
 sys_reset_n <= altpll:DE_Clock_Generator_System.locked
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_System
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_System
 inclk[0] => altpll_6rb2:auto_generated.inclk[0]
 inclk[1] => altpll_6rb2:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -8592,7 +8592,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_System|altpll_6rb2:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_System|altpll_6rb2:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -8604,7 +8604,7 @@ inclk[1] => pll1.CLK1
 locked <= pll1.LOCKED
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_Audio
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_Audio
 inclk[0] => altpll_vpb2:auto_generated.inclk[0]
 inclk[1] => altpll_vpb2:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -8665,7 +8665,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_Audio|altpll_vpb2:auto_generated
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_clocks:clocks|altpll:DE_Clock_Generator_Audio|altpll_vpb2:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -8677,7 +8677,7 @@ inclk[1] => pll1.CLK1
 locked <= pll1.LOCKED
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|PWM_generation_avalon_interface:pwm_generation_avalon_interface_0
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|PWM_generation_avalon_interface:pwm_generation_avalon_interface_0
 clock => PWM_generation:pwm_core.clk
 clock => ctrl_L[0].CLK
 clock => ctrl_L[1].CLK
@@ -8895,7 +8895,7 @@ motor_out[2] <= PWM_generation:pwm_core.motor_out[2]
 motor_out[3] <= PWM_generation:pwm_core.motor_out[3]
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|PWM_generation_avalon_interface:pwm_generation_avalon_interface_0|PWM_generation:pwm_core
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|PWM_generation_avalon_interface:pwm_generation_avalon_interface_0|PWM_generation:pwm_core
 clk => pwm_L.CLK
 clk => pwm_R.CLK
 clk => tick[0].CLK
@@ -8986,7 +8986,7 @@ motor_out[2] <= motor_out.DB_MAX_OUTPUT_PORT_TYPE
 motor_out[3] <= motor_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_master_translator:nios2_qsys_0_instruction_master_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_master_translator:nios2_qsys_0_instruction_master_translator
 clk => read_accepted.CLK
 reset => read_accepted.ACLR
 uav_write <= <GND>
@@ -9215,7 +9215,7 @@ av_writeresponserequest => ~NO_FANOUT~
 av_writeresponsevalid <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_master_translator:nios2_qsys_0_data_master_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_master_translator:nios2_qsys_0_data_master_translator
 clk => end_begintransfer.CLK
 clk => write_accepted.CLK
 clk => read_accepted.CLK
@@ -9452,7 +9452,7 @@ av_writeresponserequest => ~NO_FANOUT~
 av_writeresponsevalid <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:nios2_qsys_0_jtag_debug_module_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:nios2_qsys_0_jtag_debug_module_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -9759,7 +9759,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:onchip_memory_s1_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:onchip_memory_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -10001,7 +10001,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:sdram_s1_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:sdram_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -10180,7 +10180,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:jtag_uart_avalon_jtag_slave_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:jtag_uart_avalon_jtag_slave_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -10467,7 +10467,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:leds_s1_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:leds_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -10757,7 +10757,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:switches_s1_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:switches_s1_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -11047,7 +11047,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_translator:pwm_generation_avalon_interface_0_avalon_slave_0_translator
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_translator:pwm_generation_avalon_interface_0_avalon_slave_0_translator
 clk => in_transfer.CLK
 clk => end_beginbursttransfer.CLK
 clk => end_begintransfer.CLK
@@ -11348,7 +11348,7 @@ av_writeresponserequest <= uav_writeresponserequest.DB_MAX_OUTPUT_PORT_TYPE
 av_writeresponsevalid => uav_writeresponsevalid.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_master_agent:nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_master_agent:nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent
 clk => hold_waitrequest.CLK
 reset => hold_waitrequest.PRESET
 av_address[0] => ~NO_FANOUT~
@@ -11681,7 +11681,7 @@ rp_endofpacket => ~NO_FANOUT~
 rp_ready <= <VCC>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_master_agent:nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_master_agent:nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent
 clk => hold_waitrequest.CLK
 reset => hold_waitrequest.PRESET
 av_address[0] => ~NO_FANOUT~
@@ -12014,7 +12014,7 @@ rp_endofpacket => ~NO_FANOUT~
 rp_ready <= <VCC>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -12676,7 +12676,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -13000,7 +13000,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -13801,7 +13801,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:onchip_memory_s1_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:onchip_memory_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -14463,7 +14463,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:onchip_memory_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:onchip_memory_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -14787,7 +14787,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:onchip_memory_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:onchip_memory_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -15588,7 +15588,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -16111,7 +16111,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -16435,7 +16435,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -18670,7 +18670,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo
 clk => mem.we_a.CLK
 clk => mem.waddr_a[2].CLK
 clk => mem.waddr_a[1].CLK
@@ -19004,7 +19004,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -19666,7 +19666,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -19990,7 +19990,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:jtag_uart_avalon_jtag_slave_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -20791,7 +20791,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:leds_s1_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:leds_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -21453,7 +21453,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:leds_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:leds_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -21777,7 +21777,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:leds_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:leds_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -22578,7 +22578,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:switches_s1_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:switches_s1_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -23240,7 +23240,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:switches_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:switches_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -23564,7 +23564,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:switches_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:switches_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -24365,7 +24365,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent
 clk => clk.IN1
 reset => reset.IN1
 m0_address[0] <= <GND>
@@ -25027,7 +25027,7 @@ rp_startofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_startof
 rp_endofpacket <= altera_merlin_burst_uncompressor:uncompressor.source_endofpacket
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_slave_agent:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_slave_agent:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -25351,7 +25351,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_avalon_sc_fifo:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_avalon_sc_fifo:pwm_generation_avalon_interface_0_avalon_slave_0_translator_avalon_universal_slave_0_agent_rsp_fifo
 clk => csr_readdata[0]~reg0.CLK
 clk => csr_readdata[1]~reg0.CLK
 clk => csr_readdata[2]~reg0.CLK
@@ -26152,7 +26152,7 @@ almost_full_data <= <GND>
 almost_empty_data <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_addr_router:addr_router
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_addr_router:addr_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -26405,7 +26405,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_addr_router:addr_router|Nios_CUTECAR_addr_router_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_addr_router:addr_router|Nios_CUTECAR_addr_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <VCC>
@@ -26432,7 +26432,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_addr_router_001:addr_router_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_addr_router_001:addr_router_001
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -26779,7 +26779,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_addr_router_001:addr_router_001|Nios_CUTECAR_addr_router_001_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_addr_router_001:addr_router_001|Nios_CUTECAR_addr_router_001_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <VCC>
@@ -26806,7 +26806,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router:id_router
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router:id_router
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -27032,7 +27032,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router:id_router|Nios_CUTECAR_id_router_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router:id_router|Nios_CUTECAR_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -27059,7 +27059,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router:id_router_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router:id_router_001
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -27285,7 +27285,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router:id_router_001|Nios_CUTECAR_id_router_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router:id_router_001|Nios_CUTECAR_id_router_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -27312,7 +27312,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_002:id_router_002
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_002:id_router_002
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -27502,7 +27502,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_002:id_router_002|Nios_CUTECAR_id_router_002_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_002:id_router_002|Nios_CUTECAR_id_router_002_default_decode:the_default_decode
 default_destination_id[0] <= <VCC>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -27529,7 +27529,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_003
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_003
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -27752,7 +27752,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_003|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_003|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -27779,7 +27779,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_004
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_004
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -28002,7 +28002,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_004|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_004|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -28029,7 +28029,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_005
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_005
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -28252,7 +28252,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_005|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_005|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -28279,7 +28279,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_006
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_006
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink_valid => src_valid.DATAIN
@@ -28502,7 +28502,7 @@ src_endofpacket <= sink_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 src_ready => sink_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_id_router_003:id_router_006|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_id_router_003:id_router_006|Nios_CUTECAR_id_router_003_default_decode:the_default_decode
 default_destination_id[0] <= <GND>
 default_destination_id[1] <= <GND>
 default_destination_id[2] <= <GND>
@@ -28529,7 +28529,7 @@ default_src_channel[5] <= <GND>
 default_src_channel[6] <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_burst_adapter:burst_adapter
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_burst_adapter:burst_adapter
 clk => clk.IN1
 reset => reset.IN1
 sink0_valid => sink0_valid.IN1
@@ -28720,7 +28720,7 @@ source0_endofpacket <= altera_merlin_burst_adapter_uncompressed_only:altera_merl
 source0_ready => source0_ready.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_uncompressed_only:altera_merlin_burst_adapter_uncompressed_only.the_ba
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_uncompressed_only:altera_merlin_burst_adapter_uncompressed_only.the_ba
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 sink0_valid => source0_valid.DATAIN
@@ -28911,7 +28911,7 @@ source0_endofpacket <= sink0_endofpacket.DB_MAX_OUTPUT_PORT_TYPE
 source0_ready => sink0_ready.DATAIN
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_reset_controller:rst_controller
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_reset_controller:rst_controller
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -28933,7 +28933,7 @@ reset_out <= r_sync_rst.DB_MAX_OUTPUT_PORT_TYPE
 reset_req <= r_early_rst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -28943,7 +28943,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_reset_controller:rst_controller_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_reset_controller:rst_controller_001
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -28965,7 +28965,7 @@ reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
 reset_req <= <GND>
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -28975,7 +28975,7 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_demux:cmd_xbar_demux
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_demux:cmd_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_valid[0] => src2_valid.IN0
@@ -29641,7 +29641,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_demux_001:cmd_xbar_demux_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_demux_001:cmd_xbar_demux_001
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_valid[0] => src2_valid.IN0
@@ -31159,7 +31159,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux
 sink0_valid => request.IN1
 sink0_valid => src_valid.IN1
 sink0_data[0] => src_payload.IN1
@@ -31503,7 +31503,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb
 clk => top_priority_reg[0].CLK
 clk => top_priority_reg[1].CLK
 reset => top_priority_reg[0].PRESET
@@ -31525,7 +31525,7 @@ increment_top_priority => top_priority_reg.OUTPUTSELECT
 save_top_priority => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -31546,7 +31546,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001
 sink0_valid => request.IN1
 sink0_valid => src_valid.IN1
 sink0_data[0] => src_payload.IN1
@@ -31890,7 +31890,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb
 clk => top_priority_reg[0].CLK
 clk => top_priority_reg[1].CLK
 reset => top_priority_reg[0].PRESET
@@ -31912,7 +31912,7 @@ increment_top_priority => top_priority_reg.OUTPUTSELECT
 save_top_priority => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -31933,7 +31933,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002
 sink0_valid => request.IN1
 sink0_valid => src_valid.IN1
 sink0_data[0] => src_payload.IN1
@@ -32277,7 +32277,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002|altera_merlin_arbitrator:arb
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002|altera_merlin_arbitrator:arb
 clk => top_priority_reg[0].CLK
 clk => top_priority_reg[1].CLK
 reset => top_priority_reg[0].PRESET
@@ -32299,7 +32299,7 @@ increment_top_priority => top_priority_reg.OUTPUTSELECT
 save_top_priority => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_cmd_xbar_mux:cmd_xbar_mux_002|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -32320,7 +32320,7 @@ sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -32768,7 +32768,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux_001
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -33216,7 +33216,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux_002
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux:rsp_xbar_demux_002
 sink_valid[0] => src0_valid.IN0
 sink_valid[0] => src1_valid.IN0
 sink_data[0] => src1_data[0].DATAIN
@@ -33664,7 +33664,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_003
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_003
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -33892,7 +33892,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_004
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_004
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -34120,7 +34120,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_005
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_005
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -34348,7 +34348,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_006
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_demux_003:rsp_xbar_demux_006
 sink_valid[0] => src0_valid.IN0
 sink_data[0] => src0_data[0].DATAIN
 sink_data[1] => src0_data[1].DATAIN
@@ -34576,7 +34576,7 @@ clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux
 sink0_valid => request[0].IN1
 sink0_data[0] => src_payload.IN1
 sink0_data[1] => src_payload.IN1
@@ -35031,7 +35031,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 request[0] => grant[0].DATAIN
@@ -35050,7 +35050,7 @@ increment_top_priority => ~NO_FANOUT~
 save_top_priority => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => sum.IN0
 a[0] => full_adder.cout[0].IN0
 a[1] => cout.IN0
@@ -35081,7 +35081,7 @@ sum[4] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 sum[5] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001
 sink0_valid => request[0].IN1
 sink0_data[0] => src_payload.IN1
 sink0_data[1] => src_payload.IN1
@@ -35988,7 +35988,7 @@ clk => clk.IN1
 reset => reset.IN1
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 request[0] => grant[0].DATAIN
@@ -36023,7 +36023,7 @@ increment_top_priority => ~NO_FANOUT~
 save_top_priority => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder
 a[0] => Add0.IN14
 a[1] => Add0.IN13
 a[2] => Add0.IN12
@@ -36068,7 +36068,7 @@ sum[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 sum[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_width_adapter:width_adapter
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_width_adapter:width_adapter
 clk => byteen_reg[0].CLK
 clk => byteen_reg[1].CLK
 clk => byteen_reg[2].CLK
@@ -36499,7 +36499,7 @@ in_command_size_data[1] => ~NO_FANOUT~
 in_command_size_data[2] => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_width_adapter:width_adapter_001
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_width_adapter:width_adapter_001
 clk => clk.IN1
 reset => reset.IN1
 in_ready <= in_ready.DB_MAX_OUTPUT_PORT_TYPE
@@ -36718,7 +36718,7 @@ in_command_size_data[1] => ~NO_FANOUT~
 in_command_size_data[2] => ~NO_FANOUT~
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|altera_merlin_width_adapter:width_adapter_001|altera_merlin_burst_uncompressor:uncompressor
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|altera_merlin_width_adapter:width_adapter_001|altera_merlin_burst_uncompressor:uncompressor
 clk => burst_uncompress_address_offset[0].CLK
 clk => burst_uncompress_address_offset[1].CLK
 clk => burst_uncompress_address_offset[2].CLK
@@ -37042,7 +37042,7 @@ source_burstsize[1] <= sink_burstsize[1].DB_MAX_OUTPUT_PORT_TYPE
 source_burstsize[2] <= sink_burstsize[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top_CUTECAR|Nios_CUTECAR:u0|Nios_CUTECAR_irq_mapper:irq_mapper
+|Top_CUTECAR|Nios_CUTECAR:nios_system_inst|Nios_CUTECAR_irq_mapper:irq_mapper
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
 receiver0_irq => sender_irq[5].DATAIN

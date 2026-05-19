@@ -89,7 +89,8 @@ begin
     motor_out(2) <= pwm_R when ctrl_R(13) = '1' and ctrl_R(12) = '1' else '0';
 
     -- Left motor
-    motor_out(1) <= pwm_L when ctrl_L(13) = '1' and ctrl_L(12) = '0' else '0';
-    motor_out(0) <= pwm_L when ctrl_L(13) = '1' and ctrl_L(12) = '1' else '0';
+    -- Left motor direction inverted because the motor is mounted opposite to the right one
+	motor_out(1) <= pwm_L when ctrl_L(13) = '1' and ctrl_L(12) = '1' else '0';
+	motor_out(0) <= pwm_L when ctrl_L(13) = '1' and ctrl_L(12) = '0' else '0';
 
 end architecture rtl;
