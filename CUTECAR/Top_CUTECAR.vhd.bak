@@ -1,0 +1,105 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Top_CUTECAR IS
+PORT (
+    CLOCK_50 : IN  STD_LOGIC;
+    KEY      : IN  STD_LOGIC_VECTOR(0 DOWNTO 0);
+    SW       : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+    LED      : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+    DRAM_CLK, DRAM_CKE : OUT STD_LOGIC;
+    DRAM_ADDR          : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
+    DRAM_BA            : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    DRAM_CS_N, DRAM_CAS_N, DRAM_RAS_N, DRAM_WE_N : OUT STD_LOGIC;
+    DRAM_DQ            : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    DRAM_DQM           : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+
+    -- si tu as aussi les moteurs, laisse-les ici (sinon supprime)
+    MTRR_P : OUT STD_LOGIC;
+    MTRR_N : OUT STD_LOGIC;
+    MTRL_P : OUT STD_LOGIC;
+    MTRL_N : OUT STD_LOGIC
+);
+END Top_CUTECAR;
+
+ARCHITECTURE Structure OF Top_CUTECAR IS
+
+    component qysys_test is
+        port (
+            clk_clk                               : in    std_logic                     := 'X';
+            switches_export                       : in    std_logic_vector(7 downto 0)  := (others => 'X');
+            leds_export                           : out   std_logic_vector(7 downto 0);
+            sdram_wire_addr                       : out   std_logic_vector(12 downto 0);
+            sdram_wire_ba                         : out   std_logic_vector(1 downto 0);
+            sdram_wire_cas_n                      : out   std_logic;
+            sdram_wire_cke                        : out   std_logic;
+            sdram_wire_cs_n                       : out   std_logic;
+            sdram_wire_dq                         : inout std_logic_vector(15 downto 0) := (others => 'X');
+            sdram_wire_dqm                        : out   std_logic_vector(1 downto 0);
+            sdram_wire_ras_n                      : out   std_logic;
+            sdram_wire_we_n                       : out   std_logic;
+            reset_reset_n                         : in    std_logic                     := 'X';
+            writedatal_external_connection_export : out   std_logic_vector(13 downto 0);
+            writedatar_external_connection_export : out   std_logic_vector(13 downto 0);
+            clocks_sdram_clk_clk                  : out   std_logic
+        );
+    end component;
+
+    component PWM_generation is
+        port (
+            clk          : in  std_logic;
+            reset_n      : in  std_logic;
+            s_writedataR : in  std_logic_vector(13 downto 0);
+            s_writedataL : in  std_logic_vector(13 downto 0);
+            dc_motor_p_R : out std_logic;
+            dc_motor_n_R : out std_logic;
+            dc_motor_p_L : out std_logic;
+            dc_motor_n_L : out std_logic
+        );
+    end component;
+
+    signal writedataL_s : std_logic_vector(13 downto 0);
+    signal writedataR_s : std_logic_vector(13 downto 0);
+
+BEGIN
+
+    -- Qsys / Nios
+    NiosII : qysys_test
+    port map (
+        clk_clk        => CLOCK_50,
+        reset_reset_n   => KEY(0),
+
+        switches_export => SW,
+        leds_export     => LED,
+
+        sdram_wire_addr  => DRAM_ADDR,
+        sdram_wire_ba    => DRAM_BA,
+        sdram_wire_cas_n => DRAM_CAS_N,
+        sdram_wire_cke   => DRAM_CKE,
+        sdram_wire_cs_n  => DRAM_CS_N,
+        sdram_wire_dq    => DRAM_DQ,
+        sdram_wire_dqm   => DRAM_DQM,
+        sdram_wire_ras_n => DRAM_RAS_N,
+        sdram_wire_we_n  => DRAM_WE_N,
+
+        writedatal_external_connection_export => writedataL_s,
+        writedatar_external_connection_export => writedataR_s,
+        clocks_sdram_clk_clk => DRAM_CLK
+    );
+
+    PWM0 : PWM_generation
+    port map (
+        clk          => CLOCK_50,
+        reset_n      => KEY(0),
+        s_writedataR => writedataR_s,
+        s_writedataL => writedataL_s,
+        dc_motor_p_R => MTRR_P,
+        dc_motor_n_R => MTRR_N,
+        dc_motor_p_L => MTRL_P,
+        dc_motor_n_L => MTRL_N
+    );
+
+END Structure;

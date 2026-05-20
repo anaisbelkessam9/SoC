@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 20 14:05:35 2026
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : CUTECAR
+Top-level Entity Name : Top_CUTECAR
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 2,949 / 22,320 ( 13 % )
+    Total combinational functions : 2,619 / 22,320 ( 12 % )
+    Dedicated logic registers : 1,833 / 22,320 ( 8 % )
+Total registers : 1902
+Total pins : 66 / 154 ( 43 % )
+Total virtual pins : 0
+Total memory bits : 44,032 / 608,256 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )
